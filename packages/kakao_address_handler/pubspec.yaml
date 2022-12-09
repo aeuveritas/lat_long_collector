@@ -1,0 +1,22 @@
+name: kakao_address_handler
+description: A new Flutter package project.
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  equatable: ^2.0.5
+  http: ^0.13.5
+
+  draccoon_logger:
+    path: ../draccoon_logger
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
