@@ -2,18 +2,10 @@ import 'package:envied/envied.dart';
 
 part 'env.g.dart';
 
-@Envied(path: '.env.dev')
-abstract class EnvDEV {
+@Envied(path: '.env')
+abstract class Env {
   @EnviedField(varName: 'KAKAO_API_KEY', obfuscate: true)
-  static final kakaoAPIKey = _EnvDEV.kakaoAPIKey;
+  static final kakaoAPIKey = _Env.kakaoAPIKey;
   @EnviedField(varName: 'BLOCK_INTERVAL_SECONDS', obfuscate: true)
-  static final blockIntervalSeconds = _EnvDEV.blockIntervalSeconds;
-}
-
-@Envied(path: '.env.prod')
-abstract class EnvPROD {
-  @EnviedField(varName: 'KAKAO_API_KEY', obfuscate: true)
-  static final kakaoAPIKey = _EnvPROD.kakaoAPIKey;
-  @EnviedField(varName: 'BLOCK_INTERVAL_SECONDS', obfuscate: true)
-  static final blockIntervalSeconds = _EnvPROD.blockIntervalSeconds;
+  static final blockIntervalSeconds = _Env.blockIntervalSeconds;
 }
