@@ -32,3 +32,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+msix_config:
+  display_name: LLCollector
+  publisher_display_name: DRaccoon
+  identity_name: com.draccoon.llcollector
+  msix_version: 1.0.0.0
+  capabilities: internetClient
