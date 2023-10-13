@@ -15,7 +15,7 @@ BLOCK_INTERVAL_SECONDS=<BLOCK-INTERVAL-FOR-REST-API-IN-SECONDS>
 # Enable Windows developer mode
 $ start ms-settings:developers
 
-$ flutter put get
+$ flutter pub get
 
 $ flutter pub run build_runner build --delete-conflicting-outputs
 
